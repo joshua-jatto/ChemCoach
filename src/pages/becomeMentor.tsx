@@ -1,7 +1,9 @@
+import UserForm from "../components/userForm";
 
 export default function BecomeMentor() {
   return (
-    <div className="container mx-auto p-4">
+    <div className="mx-auto mt-10 max-w-md rounded-lg bg-white p-6 shadow-md">
+    
     <div className="container mx-auto p-2 text-center">
       {" "}
       <h2 className="font-serif text-xl text-blue-500 md:text-4xl lg:text-2xl">
@@ -12,8 +14,7 @@ export default function BecomeMentor() {
         Mentor
       </h2>
     </div>
-    <div>becomeMentor? 1.sign up 2. create mentors profile 3. set availability</div>
-
+    <UserForm/>
   </div>
 
   )

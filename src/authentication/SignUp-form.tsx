@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 export default function SignUpForm() {
   const [userEmail, setUserEmail] = useState<string>("");
   const [userPassword, setUserPassword] = useState<string>("");
@@ -58,9 +60,9 @@ export default function SignUpForm() {
         <div className="mt-4 text-center">
           <p>
             Already a Member?{" "}
-            <a href="" className="text-blue-500 hover:underline">
+            <Link to="/login" className="text-blue-500 hover:underline">
               Log in
-            </a>
+            </Link>
           </p>
         </div>
       </header>

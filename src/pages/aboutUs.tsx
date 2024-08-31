@@ -11,8 +11,9 @@ export default function AboutUs() {
           Us
         </h2>
       </div>
-      <div>
-        <p className="line-clamp-10 md:line-clamp-20 ">
+      <div className="flex items-center justify-center bg-white shadow-xl  h-screen">
+      
+        <p className="line-clamp-10 md:line-clamp-20 p-10 ">
         ChemCoach
 ChemCoach is a project inspired by Coding Coach, specifically developed to connect chemistry students with volunteer mentors. This platform aims to provide guidance and support to students by facilitating connections with experienced mentors in the field of chemistry.
 

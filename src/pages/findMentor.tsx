@@ -1,5 +1,6 @@
 import  { useState } from 'react'
-import { findMentor, applyForMentorship } from '../utilities/types'
+import { findMentor} from '../utilities/types'
+import applyForMentorship from '../utilities/mentorsData'
 export default function findMentor() {
   const [mentors, setMentors] = useState<findMentor[]>(applyForMentorship)
   return (
