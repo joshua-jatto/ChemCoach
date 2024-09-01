@@ -30,7 +30,7 @@ export default function Navbar() {
   
       {/* User Icon */}
       <div className="flex items-center space-x-4">
-        <div className="hidden md:flex items-center justify-center size-10 rounded-full bg-blue-500 text-white text-md font-bold">
+        <div className="flex items-center justify-center size-10 rounded-full bg-blue-500 text-white text-md font-bold">
           CC
         </div>
       </div>

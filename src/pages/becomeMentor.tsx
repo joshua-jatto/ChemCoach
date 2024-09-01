@@ -1,4 +1,4 @@
-import UserForm from "../components/userForm";
+import BecomeMentorForm from "../components/becomeMentorForm";
 
 export default function BecomeMentor() {
   return (
@@ -14,7 +14,8 @@ export default function BecomeMentor() {
         Mentor
       </h2>
     </div>
-    <UserForm/>
+{/* NOTE: USER MUST BE AUTHENTICATED THEN NAVIGATED TO ACCESS THIS PAGE */}
+    <BecomeMentorForm/>
   </div>
 
   )

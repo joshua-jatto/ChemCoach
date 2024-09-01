@@ -1,13 +1,26 @@
-import  { useState } from 'react'
+import  { useState, useEffect } from 'react'
 import { findMentor} from '../utilities/types'
 import applyForMentorship from '../utilities/mentorsData'
+import SearchMentors from '../components/searchMentors'
+import { useGlobal } from '../context/GlobalContext'
 export default function findMentor() {
   const [mentors, setMentors] = useState<findMentor[]>(applyForMentorship)
+  const {searched} = useGlobal()
+  
+  useEffect(() => {
+  
+     if(searched?.length)setMentors(searched)
+  }, [searched])
+  
   return (
     <div className='container mx-auto p-4 divide-y-4 divide-green-500 '>
       <div   className='container mx-auto p-2 text-center'> <h2 className="text-xl md:text-4xl lg:text-2xl text-blue-500 font-serif">
   Find<span className="text-xl md:text-xl lg:text-2xl text-green-500 font-bold inline-block">∞</span>Mentor
-</h2></div>
+</h2>
+<SearchMentors/>
+</div>
+
+{/* NOTE: USER MUST BE AUTHENTICATED THEN NAVIGATED TO ACCESS THIS PAGE */}
      
 
       {

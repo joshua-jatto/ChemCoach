@@ -14,14 +14,14 @@ const chemistryFields: string[] = [
     "Forensic Chemistry"
 ];
 
-const ChemistryFields: React.FC = () => {
+function ChemistryFields(){
     const [currentField, setCurrentField] = useState<string | null>(null);
 
     useEffect(() => {
         chemistryFields.forEach((field, index) => {
             setTimeout(() => {
                 setCurrentField(`${field}`);
-            }, index * 3000); // 3000ms = 3 seconds
+            }, index * 2000); // 3000ms = 3 seconds
         });
     }, []);
 

@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { findMentor} from '../utilities/types';
 
-const UserForm = () => {
+const BecomeMentorForm = () => {
   const [formData, setFormData] = useState<findMentor>({
     id:0,
     fullName: '',
@@ -242,4 +242,4 @@ const UserForm = () => {
   );
 };
 
-export default UserForm;
+export default BecomeMentorForm;
