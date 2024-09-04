@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 // Define an array of fields or professions in chemistry
 const chemistryFields: string[] = [
@@ -11,7 +11,8 @@ const chemistryFields: string[] = [
     "Environmental Chemistry",
     "Materials Science",
     "Pharmaceutical Chemistry",
-    "Forensic Chemistry"
+    "Forensic Chemistry",
+    ""
 ];
 
 function ChemistryFields(){

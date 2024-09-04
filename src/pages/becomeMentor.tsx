@@ -16,6 +16,7 @@ export default function BecomeMentor() {
     </div>
 {/* NOTE: USER MUST BE AUTHENTICATED THEN NAVIGATED TO ACCESS THIS PAGE */}
     <BecomeMentorForm/>
+   
   </div>
 
   )

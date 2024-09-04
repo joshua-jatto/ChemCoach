@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const NavFooter = () => {
-  const currentDate = new Date().toLocaleDateString();
+  // const currentDate = new Date().toLocaleDateString();
 
   return (
     <footer className="p-6 bg-gray-900 text-green-500 text-sm bottom-0 w-full">

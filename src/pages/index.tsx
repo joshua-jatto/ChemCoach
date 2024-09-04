@@ -4,7 +4,7 @@ import BecomeMember from "../components/becomeMember";
 export default function Home() {
   return (
     <div className="container mx-auto p-4">
-      <div className="flex h-screen flex-col items-center">
+      <div className="flex h-auto flex-col items-center">
         <div className="mt-[4rem] text-center font-serif text-4xl font-semibold text-blue-600">
           Welcome, Great chemist...{" "}
         </div>

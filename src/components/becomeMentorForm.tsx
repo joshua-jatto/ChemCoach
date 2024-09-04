@@ -1,7 +1,7 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent } from 'react';
 import { findMentor} from '../utilities/types';
 
-const BecomeMentorForm = () => {
+ function BecomeMentorForm(){
   const [formData, setFormData] = useState<findMentor>({
     id:0,
     fullName: '',
@@ -234,6 +234,7 @@ const BecomeMentorForm = () => {
   <button
     type="submit"
     className="w-full rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-400"
+    
   >
     Submit
   </button>
